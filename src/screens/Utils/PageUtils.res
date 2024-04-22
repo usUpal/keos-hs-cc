@@ -1,4 +1,5 @@
 module PageHeading = {
+  // open ReactEvent
   @react.component
   let make = (
     ~title,
@@ -59,117 +60,117 @@ module ContentSaidbar = {
     open UIUtils
     let headerTextStyle = HSwitchUtils.getTextClass((H1, Optional))
     <div
-      className="bg-[#F2F2F2] text-white w-full max-w-[300px] h-screen	rounded-md p-4 shadow-lg overflow-x-auto">
+      className="bg-[#F2F2F2] text-white w-full max-w-[300px]	rounded-md p-4 shadow-lg overflow-x-auto">
       {switch leftIcon {
       | Some(icon) => <Icon name={icon} size=56 />
       | None => React.null
       }}
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username1->React.string} </div>
           <div className="text-[12px]"> {title1->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username2->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username3->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username4->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username4->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username4->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username4->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username4->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username4->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
       </div>
       <div
-        className="relative flex items-center gap-2  bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
+        className="relative flex items-center gap-2  focus:text-white focus:bg-[#2963FF] py-2 px-3 rounded-md mt-3 cursor-pointer	">
         <img className="h-[40px] w-[40px] rounded-full object-cover" src={`/icons/LoadError.svg`} />
         <span
           className="top-[35px] left-[40px] absolute  w-3 h-3 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full"
         />
-        <div>
+        <div className="text-black">
           <div className="text-[16px] font-semibold	"> {username4->React.string} </div>
           <div className="text-[12px]"> {title2->React.string} </div>
         </div>
@@ -314,6 +315,22 @@ module Contentarea = {
     ~solicitar="",
     ~negar="",
     ~passport="",
+    ~passportimginner="",
+    ~lastname="",
+    ~firstname="",
+    ~thardname="",
+    ~number="",
+    ~maile="",
+    ~birthdate="",
+    ~birthplace="",
+    ~information="",
+    ~tipo="",
+    ~authority="",
+    ~sandmaile="",
+    ~palaceissue="",
+    ~expira="",
+    ~issuedate="",
+    ~opciones="",
     ~aprovar="",
     ~subTitle="?",
     ~customTitleStyle="",
@@ -323,22 +340,33 @@ module Contentarea = {
     ~customTagStyle="bg-extra-light-grey border-light-grey",
     ~leftIcon=None,
   ) => {
-    let (activeDiv, setActiveDiv) = React.useState(() => "details")
+    let (value, setValue) = React.useState(() => "")
 
-    let handleClick = divName => {
-      setActiveDiv(_ => divName)
+    let handleChange = event => {
+      setValue(ReactEvent.Form.target(event)["value"])
     }
+
+    // let make = () => {
+    // let (isOpen, setIsOpen) = React.useState(() => false)
+
+    // let openModal = () => {
+    //   setIsOpen(_ => true)
+    // }
+
+    // let closeModal = () => {
+    //   setIsOpen(_ => false)
+    // }
 
     open UIUtils
     let headerTextStyle = HSwitchUtils.getTextClass((H1, Optional))
-    <div className="bg-white w-full h-screen rounded-md p-4 shadow-lg">
+    <div className="w-full  rounded-md p-4">
       {switch leftIcon {
       | Some(icon) => <Icon name={icon} size=56 />
       | None => React.null
       }}
       <div className="flex flex-col  gap-4">
         <div className=" text-[24px] font-medium"> {title1->React.string} </div>
-        <div className="shadow-lg rounded-lg w-full p-5 ">
+        <div className="shadow-lg rounded-lg w-full p-5 bg-[#FFFCF5]">
           <div className="text-[18px] font-semibold	pb-5"> {errortext->React.string} </div>
           <div className="flex gap-2 items-center">
             <img
@@ -360,7 +388,7 @@ module Contentarea = {
                 {errormessage->React.string}
               </div>
               <button
-                className="ms-auto -mx-1.5 -my-1.5  text-white rounded-lg focus:ring-2 focus:ring-gray-400 p-1.5 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white">
+                className="ms-auto -mx-1.5 -my-1.5  text-white rounded-[5px] focus:ring-2 focus:ring-gray-400 p-1.5 inline-flex items-center justify-center h-5 w-5 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white">
                 <span className="sr-only" />
                 <svg
                   className="w-3 h-3"
@@ -392,7 +420,7 @@ module Contentarea = {
                 {errormessage->React.string}
               </div>
               <button
-                className="ms-auto -mx-1.5 -my-1.5  text-[#E9A23B] rounded-lg focus:ring-2 focus:ring-gray-400 p-1.5 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white">
+                className="ms-auto -mx-1.5 -my-1.5  text-[#E9A23B] rounded-[5px] focus:ring-2 focus:ring-gray-400 p-1.5 inline-flex items-center justify-center h-5 w-5 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white">
                 <span className="sr-only" />
                 <svg
                   className="w-3 h-3"
@@ -405,7 +433,7 @@ module Contentarea = {
             </div>
           </div>
         </div>
-        <div className="shadow-lg rounded-lg w-full p-5">
+        <div className="shadow-lg rounded-lg w-full p-5 bg-white">
           <div className=" flex items-center justify-between gap-4">
             <div className="bg-[#EAEAEA] rounded-md p-1 flex items-center gap-4">
               <div
@@ -416,7 +444,7 @@ module Contentarea = {
                 {chat->React.string}
               </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               <div
                 className="bg-white py-3 px-[20px] rounded-md cursor-pointer	border border-[#676E7629] text-[14px] font-medium">
                 {security->React.string}
@@ -433,11 +461,240 @@ module Contentarea = {
                 className="py-3 px-[20px] border-2 border-[#676E7629] bg-[#2963FF] text-white rounded-md cursor-pointer	 text-[14px] font-medium">
                 {aprovar->React.string}
               </div>
+              // <div>
+              //   <div
+              //     className="py-3 px-[20px] border-2 border-[#676E7629] bg-[#2963FF] text-white rounded-md cursor-pointer text-[14px] font-medium"
+              //     onClick={_ => openModal()}>
+              //     {React.string("Click me to open modal")}
+              //   </div>
+              //   {isOpen &&
+              //   <div className="modal">
+              //     <div className="modal-content">
+              //       <span className="close" onClick={_ => closeModal()}> {React.string("X")} </span>
+              //       <p> {React.string("Modal content goes here.")} </p>
+              //     </div>
+              //   </div>}
+              // </div>
             </div>
           </div>
         </div>
-        <div className="shadow-lg rounded-lg w-full p-5">
-          <div> {passport->React.string} </div>
+        <div className="shadow-md rounded-lg w-full p-5 bg-white">
+          <div className="flex gap-4">
+            <div className="w-full max-w-[600px]">
+              <div className="text-[25px] font-medium text-[#2C2C2C]">
+                {passport->React.string}
+              </div>
+              <div className="flex gap-3 ">
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {lastname->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className="max-w-[190px] border-2 border-[#676E7629] p-3 rounded-[10px] outline-none placeholder:text-[25px] placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="------"
+                    />
+                  </div>
+                </div>
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {firstname->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className="max-w-[190px] border-2 border-[#676E7629] p-3 rounded-[10px] outline-none placeholder:text-[25px]  placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="------"
+                    />
+                  </div>
+                </div>
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {thardname->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className="max-w-[190px] border-2 border-[#676E7629] p-3 rounded-[10px] outline-none placeholder:text-[25px]  placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="------"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-3 pt-5">
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {number->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className="max-w-[190px] border-2 border-[#676E7629] p-3 rounded-[10px] outline-none placeholder:text-[25px] placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="------"
+                    />
+                  </div>
+                </div>
+                <div className="w-full">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {maile->React.string}
+                  </label>
+                  <div className="pt-2 w-full">
+                    <input
+                      className="border-2 w-full border-[#676E7629] p-3 rounded-[10px] outline-none placeholder:text-[25px]  placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="------"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-3 pt-5">
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {birthdate->React.string}
+                  </label>
+                  <div className="pt-2  max-w-[190px]">
+                    <input
+                      className=" max-w-[190px] p-3 rounded-[10px] outline-[#9E9E9E] placeholder:text-[16px] placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="XXXXXXXXXXX"
+                    />
+                  </div>
+                </div>
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {birthplace->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className=" max-w-[190px] p-3 rounded-[10px] outline-[#9E9E9E] placeholder:text-[16px]  placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="XXXXXXXXX"
+                    />
+                  </div>
+                </div>
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {sandmaile->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className=" max-w-[190px] p-3 rounded-[10px] outline-[#9E9E9E] placeholder:text-[16px]  placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="XXXXXXX"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="text-[24px] font-medium py-[14px]"> {information->React.string} </div>
+              <div className="flex gap-3 pt-5">
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {tipo->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className="max-w-[190px] p-3 rounded-[10px] outline-[#9E9E9E] placeholder:text-[16px] placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="XXXXXXXXXXX"
+                    />
+                  </div>
+                </div>
+                <div className="w-full">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {authority->React.string}
+                  </label>
+                  <div className="pt-2 w-full">
+                    <input
+                      className="w-full p-3 rounded-[10px] outline-[#9E9E9E] placeholder:text-[16px]  placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="XXXXXXXXX"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-3 pt-5">
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {palaceissue->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className=" max-w-[190px] p-3 rounded-[10px] outline-[#9E9E9E] placeholder:text-[16px] placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="XXXXXXXXXXX"
+                    />
+                  </div>
+                </div>
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {issuedate->React.string}
+                  </label>
+                  <div className="pt-2 max-w-[190px]">
+                    <input
+                      className=" max-w-[190px] p-3 rounded-[10px] outline-[#9E9E9E] placeholder:text-[16px]  placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="XXXXXXXXX"
+                    />
+                  </div>
+                </div>
+                <div className="">
+                  <label className="text-[#9E9E9E] text-[14px] font-medium">
+                    {expira->React.string}
+                  </label>
+                  <div className="pt-2  max-w-[190px]">
+                    <input
+                      className=" max-w-[190px] p-3 rounded-[10px] outline-[#9E9E9E] placeholder:text-[16px]  placeholder:text-[#565656]"
+                      value
+                      onChange=handleChange
+                      placeholder="XXXXXXX"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <img
+                className="h-[330px] w-[330px] rounded-[10px] object-cover bg-black"
+                src={`/icons/LoadError.svg`}
+              />
+              <div className="text-[15px] font-medium text-[#2C2C2C] pt-2">
+                {passportimginner->React.string}
+              </div>
+              <div className="pt-3 flex gap-3">
+                <img
+                  className="h-[50px] w-[50px] rounded-[10px] object-cover bg-black"
+                  src={`/icons/LoadError.svg`}
+                />
+                <img
+                  className="h-[50px] w-[50px] rounded-[10px] object-cover bg-black"
+                  src={`/icons/LoadError.svg`}
+                />
+              </div>
+              <div className="pt-[100px] flex gap-3">
+                <div
+                  className="py-3 px-[45px] border-2 border-[#676E7629] bg-white text-black rounded-md cursor-pointer	 text-[14px] font-medium">
+                  {opciones->React.string}
+                </div>
+                <div
+                  className="py-3 px-[45px] border-2 border-[#676E7629] bg-[#2963FF] text-white rounded-md cursor-pointer	 text-[14px] font-medium">
+                  {aprovar->React.string}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         // <div id="step-1" className="md:col-span-2 step-tab">

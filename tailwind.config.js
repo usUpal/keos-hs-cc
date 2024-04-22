@@ -54,7 +54,7 @@ module.exports = {
         standardPageWidth: "67.5rem",
       },
       maxWidth: {
-        fixedPageWidth: "82.75rem",
+        fixedPageWidth: "90.75rem",
       },
 
       boxShadow: {
