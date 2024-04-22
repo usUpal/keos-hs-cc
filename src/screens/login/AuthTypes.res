@@ -1,0 +1,1 @@
+type authorization = NoAccess | Access
